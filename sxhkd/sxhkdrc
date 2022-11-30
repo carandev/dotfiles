@@ -25,7 +25,7 @@ XF86AudioMute
 	pamixer -t
 
 Print
-	scrot -s	
+	flameshot gui
 
 Scroll_Lock
 	/home/carandev/dev/scripts/turnon_keyboard_light
