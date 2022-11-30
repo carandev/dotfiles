@@ -1,0 +1,11 @@
+[Default Applications]
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+x-scheme-handler/fleet=jetbrains-fleet.desktop
+x-scheme-handler/postman=Postman.desktop
+application/pdf=zathura.desktop
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
+x-scheme-handler/gitkraken=GitKraken.desktop
+
+[Added Associations]
+image/svg+xml=code-oss.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
