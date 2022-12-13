@@ -86,6 +86,7 @@ plugins=(
 	archlinux
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+  gradle-completion
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,8 +120,6 @@ alias termconfig="lvim ~/.config/wezterm/wezterm.lua"
 alias termkeyconfig="lvim ~/.config/sxhkd/sxhkdrc"
 alias ls='lsd'
 
-export PATH=$PATH:/home/carandev/dev/scripts/
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -129,7 +128,7 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="/home/carandev/.local/share/pnpm"
 # pnpm end
 #
-export PATH=$PNPM_HOME:$HOME/.local/bin:$PATH:/home/carandev/.cargo/bin
+export PATH=$PNPM_HOME:$HOME/.local/bin:$PATH:/home/carandev/.cargo/bin:/home/carandev/dev/scripts/:/home/carandev/.local/share/JetBrains/Toolbox/scripts/
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
@@ -138,3 +137,5 @@ eval "$(zoxide init zsh)"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+[ -s "/home/carandev/.jabba/jabba.sh" ] && source "/home/carandev/.jabba/jabba.sh"
