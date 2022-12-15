@@ -1,0 +1,12 @@
+{
+    "f828d99f-09fd-4572-9143-c829c0742e6e": {
+        "id": "f828d99f-09fd-4572-9143-c829c0742e6e",
+        "name": "DuckDuckGo",
+        "keyword": "ddg",
+        "cmd": "https://duckduckgo.com/?q=",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": true,
+        "added": 1671072052.2426248
+    }
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Keyboard Light",
+    "description": "Turn on and turn off keyboard lights",
+    "icon": null,
+    "script": "/home/carandev/dev/scripts/turnon_keyboard_light"
+  }
+]
