@@ -14,6 +14,7 @@ lvim.format_on_save = true
 lvim.colorscheme = "tokyonight"
 lvim.transparent_window = true
 lvim.builtin.lualine.style = "default"
+vim.opt.clipboard = "unnamedplus"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
