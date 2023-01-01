@@ -4,7 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="lvim"
-
+export _JAVA_AWT_WM_NONREPARENTING=1
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -118,24 +118,17 @@ alias zshconfig="lvim ~/.zshrc"
 alias ohmyzsh="lvim ~/.oh-my-zsh"
 alias termconfig="lvim ~/.config/wezterm/wezterm.lua"
 alias termkeyconfig="lvim ~/.config/sxhkd/sxhkdrc"
-alias ls='lsd'
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias ls='exa'
+alias l='exa -al --icons --git --header'
+alias tree='exa -Tal --icons --git --header --git-ignore --icons'
+alias droidcam_audio="pacmd load-module module-alsa-source device=hw:Loopback,1,0"
 
 # pnpm
 export PNPM_HOME="/home/carandev/.local/share/pnpm"
 # pnpm end
 #
-export PATH=$PNPM_HOME:$HOME/.local/bin:$PATH:/home/carandev/.cargo/bin:/home/carandev/dev/scripts/:/home/carandev/.local/share/JetBrains/Toolbox/scripts/
+export PATH=$PNPM_HOME:$HOME/.local/bin:$PATH:/home/carandev/.cargo/bin:/home/carandev/dev/scripts/:/home/carandev/.local/share/JetBrains/Toolbox/scripts/:/home/carandev/.deno/bin/
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
-[ -s "/home/carandev/.jabba/jabba.sh" ] && source "/home/carandev/.jabba/jabba.sh"
