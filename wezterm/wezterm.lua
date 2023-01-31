@@ -12,6 +12,7 @@ return {
     top = 0,
     bottom = 0
   },
+  font_size = 10,
   -- window_background_image = '/home/carandev/wallpapers/wallhaven-9mjoy1.png',
 
   -- window_background_image_hsb = {
