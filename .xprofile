@@ -3,3 +3,4 @@ setxkbmap es &
 xrandr --output LVDS1 --primary --mode 1366x768 --pos -1366x0 --output VGA1 --mode 1600x900 --pos 0x0
 picom &
 feh --no-fehbg --bg-fill '/home/carandev/wallpapers/wallpaper.png'
+discord &
