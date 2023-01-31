@@ -3,10 +3,10 @@
         "id": "f828d99f-09fd-4572-9143-c829c0742e6e",
         "name": "DuckDuckGo",
         "keyword": "ddg",
-        "cmd": "https://duckduckgo.com/?q=",
+        "cmd": "https://duckduckgo.com/?q=%s",
         "icon": null,
         "is_default_search": true,
-        "run_without_argument": true,
+        "run_without_argument": false,
         "added": 1671072052.2426248
     }
 }
