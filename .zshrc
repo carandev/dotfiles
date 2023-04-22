@@ -127,8 +127,12 @@ alias droidcam_audio="pacmd load-module module-alsa-source device=hw:Loopback,1,
 export PNPM_HOME="/home/carandev/.local/share/pnpm"
 # pnpm end
 #
-export PATH=$PNPM_HOME:$HOME/.local/bin:$PATH:/home/carandev/.cargo/bin:/home/carandev/dev/scripts/:/home/carandev/.local/share/JetBrains/Toolbox/scripts/:/home/carandev/.deno/bin/
+export PATH=$PNPM_HOME:$HOME/.local/bin:$PATH:/home/carandev/.cargo/bin:/home/carandev/dev/scripts/:/home/carandev/.local/share/JetBrains/Toolbox/scripts/:/home/carandev/.deno/bin/:/home/carandev/.config/nvim/lua-language-server/bin/:/home/carandev/.config/nvim/jdt-language-server/bin
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH="$PATH:/home/carandev/.bin"
+
+export PATH="$PATH:/home/carandev/.bin"
