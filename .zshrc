@@ -119,8 +119,8 @@ alias ohmyzsh="lvim ~/.oh-my-zsh"
 alias termconfig="lvim ~/.config/wezterm/wezterm.lua"
 alias termkeyconfig="lvim ~/.config/sxhkd/sxhkdrc"
 alias ls='exa'
-alias l='exa -al --icons --git --header'
-alias tree='exa -Tal --icons --git --header --git-ignore --icons'
+alias l='exa -al --icons --header'
+alias tree='exa -Tal --icons --header --git-ignore --icons'
 alias droidcam_audio="pacmd load-module module-alsa-source device=hw:Loopback,1,0"
 
 # pnpm
@@ -136,3 +136,7 @@ eval "$(zoxide init zsh)"
 export PATH="$PATH:/home/carandev/.bin"
 
 export PATH="$PATH:/home/carandev/.bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
