@@ -1,3 +1,4 @@
 ulauncher/ext_preferences
 lvim/plugin/packer_compiled.lua
 lvim/plugin/packer_compiled.lua
+lvim/lazy-lock.json
