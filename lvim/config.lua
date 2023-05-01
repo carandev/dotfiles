@@ -196,7 +196,8 @@ code_actions.setup {
 
 -- Additional Plugins
 lvim.plugins = {
-  { "zbirenbaum/copilot.lua",
+  {
+    "zbirenbaum/copilot.lua",
     event = { "VimEnter" },
     config = function()
       vim.defer_fn(function()
@@ -225,10 +226,9 @@ lvim.plugins = {
   },
   {
     "pwntester/octo.nvim",
-    requires = {
+    dependencies = {
       'nvim-lua/plenary.nvim',
       'nvim-telescope/telescope.nvim',
-      'kyazdani42/nvim-web-devicons',
     },
     config = function()
       require("octo").setup()
@@ -251,13 +251,13 @@ lvim.plugins = {
     "norcalli/nvim-colorizer.lua",
     config = function()
       require("colorizer").setup({ "css", "scss", "html", "javascript" }, {
-        RGB = true, -- #RGB hex codes
-        RRGGBB = true, -- #RRGGBB hex codes
+        RGB = true,      -- #RGB hex codes
+        RRGGBB = true,   -- #RRGGBB hex codes
         RRGGBBAA = true, -- #RRGGBBAA hex codes
-        rgb_fn = true, -- CSS rgb() and rgba() functions
-        hsl_fn = true, -- CSS hsl() and hsla() functions
-        css = true, -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
-        css_fn = true, -- Enable all CSS *functions*: rgb_fn, hsl_fn
+        rgb_fn = true,   -- CSS rgb() and rgba() functions
+        hsl_fn = true,   -- CSS hsl() and hsla() functions
+        css = true,      -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+        css_fn = true,   -- Enable all CSS *functions*: rgb_fn, hsl_fn
       })
     end,
   },
@@ -286,7 +286,7 @@ lvim.plugins = {
   {
     "tpope/vim-surround",
     -- make sure to change the value of `timeoutlen` if it's not triggering correctly, see https://github.com/tpope/vim-surround/issues/117
-    setup = function()
+    init = function()
       vim.o.timeoutlen = 1000
     end
   },
