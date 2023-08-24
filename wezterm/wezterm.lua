@@ -12,7 +12,8 @@ return {
     top = 0,
     bottom = 0
   },
-  font_size = 10,
+  font_size = 11,
+  font = wezterm.font 'Victor Mono NF',
   -- window_background_image = '/home/carandev/wallpapers/wallhaven-9mjoy1.png',
 
   -- window_background_image_hsb = {
@@ -22,11 +23,15 @@ return {
   text_background_opacity = 0.7,
   keys = {
     { key = 'w', mods = 'CTRL|META', action = wezterm.action { CloseCurrentPane = { confirm = true } } },
-    { key = 'e', mods = 'CTRL|META', action = wezterm.action { SpawnCommandInNewTab = {
-      label = 'Ranger',
-      args = { 'bash', '-c ranger' },
-      cwd = '/home/carandev/dev/'
-    } } }
+    {
+      key = 'e',
+      mods = 'CTRL|META',
+      action = wezterm.action { SpawnCommandInNewTab = {
+        label = 'Ranger',
+        args = { 'bash', '-c ranger' },
+        cwd = '/home/carandev/dev/'
+      } }
+    }
   },
   launch_menu = {
     {
