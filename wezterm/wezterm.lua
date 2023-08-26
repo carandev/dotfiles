@@ -19,7 +19,7 @@ return {
   -- window_background_image_hsb = {
   --   brightness = 0.05,
   -- }
-  window_background_opacity = 0.9,
+  window_background_opacity = 0.8,
   text_background_opacity = 0.7,
   keys = {
     { key = 'w', mods = 'CTRL|META', action = wezterm.action { CloseCurrentPane = { confirm = true } } },
