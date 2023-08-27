@@ -1,6 +1,6 @@
-udiskie -t &
+xrandr --output LVDS1 --primary --mode 1366x768 --pos -1600x0 --output VGA1 --mode 1600x900 --pos 0x0 &
 setxkbmap es &
-xrandr --output LVDS1 --primary --mode 1366x768 --pos -1366x0 --output VGA1 --mode 1600x900 --pos 0x0
+udiskie -t &
+~/dev/scripts/change_background.py ~/Imágenes/wallpaper/ &
+~/dev/eww/target/release/eww open bar &
 picom &
-feh --no-fehbg --bg-fill '/home/carandev/wallpapers/wallpaper.png'
-discord &
