@@ -27,6 +27,9 @@ XF86AudioMute
 Print
 	flameshot gui
 
+super + shift + s
+	flameshot gui
+
 Scroll_Lock
 	/home/carandev/dev/scripts/turnon_keyboard_light
 
