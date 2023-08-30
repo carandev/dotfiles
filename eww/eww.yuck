@@ -1,14 +1,62 @@
 (defpoll time :interval "10s"
   "date '+%H:%M %b %d, %Y'")
 
+(defpoll volume :interval "500ms"
+  "pamixer --get-volume-human")
+
+(defpoll desktop :interval "10ms"
+  "wmctrl -d | grep '*' | cut -d ' ' -f 1")
+
+(defwidget bar []
+  (centerbox :orientation "h"
+    :class "bar"
+    (workspaces)
+    ""
+    (sidestaff)
+  )
+)
+
+(defwidget workspaces []
+  (box :class "workspaces btn-${desktop}"
+    :orientation "h"
+    :width "25%"
+    :space-evenly true
+    :halign "start"
+    :spacing 10
+
+    (button :onclick "wmctrl -s 0" " ")
+    (button :onclick "wmctrl -s 1" " ")
+    (button :onclick "wmctrl -s 2" "󱞁 ")
+    (button :onclick "wmctrl -s 3" " ")
+    (button :onclick "wmctrl -s 4" " ")
+  )
+)
+
+(defwidget sidestaff []
+  (box :orientation "h"
+    :class "sidestaff"
+    :width "25%"
+    :space-evenly false
+    :spacing 15
+    :halign "end"
+    (label :class "datetime"
+      :text time
+    )
+    (button :onclick "poweroff" " ")
+    (button :onclick "reboot" "󰑓 ")
+    (button :onclick "loginctl kill-session self" "󰗽 ")
+  )
+)
+
 (defwindow bar
   :monitor 0
   :windowtype "dock"
   :geometry (geometry :x "0%"
                       :y "0%"
-                      :width "90%"
+                      :width "100%"
                       :height "10px"
                       :anchor "top center")
-  :reserve (struts :side "top" :distance "4%")
-  time
+  :reserve (struts :side "top" :distance "3%")
+  (bar)
 )
+
