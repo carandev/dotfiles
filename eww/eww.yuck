@@ -42,9 +42,9 @@
     (label :class "datetime"
       :text time
     )
-    (button :onclick "poweroff" " ")
-    (button :onclick "reboot" "󰑓 ")
     (button :onclick "loginctl kill-session self" "󰗽 ")
+    (button :onclick "reboot" "󰑓 ")
+    (button :onclick "poweroff" " ")
   )
 )
 
