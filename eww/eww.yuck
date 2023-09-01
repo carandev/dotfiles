@@ -2,22 +2,49 @@
   "date '+%H:%M %b %d, %Y'")
 
 (defpoll volume :interval "500ms"
-  "pamixer --get-volume-human")
+  "pamixer --get-volume")
 
 (defpoll desktop :interval "10ms"
   "wmctrl -d | grep '*' | cut -d ' ' -f 1")
+
+(defpoll current-song :interval "1s"
+  `playerctl  metadata -f "{{title}} - {{ artist }}" -p spotify`)
 
 (defwidget bar []
   (centerbox :orientation "h"
     :class "bar"
     (workspaces)
-    ""
+    (music)
     (sidestaff)
   )
 )
 
+(defwidget music []
+  (box :class "sct"
+    :orientation "h"
+    :space-evenly true
+    :halign "center"
+
+    (label
+      :text current-song
+    )
+
+    (box
+      :orientation "h"
+      :space-evenly true
+      :halign "center"
+      :spacing 10
+
+      (button :onclick "playerctl previous -p spotify" "󰒫 ")
+      (button :onclick "playerctl play-pause -p spotify" "󰐎 ")
+      (button :onclick "playerctl next -p spotify" "󰒬 ")
+    )
+
+  )
+)
+
 (defwidget workspaces []
-  (box :class "workspaces btn-${desktop}"
+  (box :class "sct btn-${desktop}"
     :orientation "h"
     :width "25%"
     :space-evenly true
@@ -34,7 +61,7 @@
 
 (defwidget sidestaff []
   (box :orientation "h"
-    :class "sidestaff"
+    :class "sidestaff sct"
     :width "25%"
     :space-evenly false
     :spacing 15
@@ -42,14 +69,13 @@
     (label :class "datetime"
       :text time
     )
-    (button :onclick "loginctl kill-session self" "󰗽 ")
-    (button :onclick "reboot" "󰑓 ")
-    (button :onclick "poweroff" " ")
+    (button :tooltip "Cerrar Sesión" :onclick "loginctl kill-session self" "󰗽 ")
+    (button :tooltip "Reiniciar" :onclick "reboot" "󰑓 ")
+    (button :tooltip "Apagar" :onclick "poweroff" " ")
   )
 )
 
 (defwindow bar
-  :monitor 0
   :windowtype "dock"
   :geometry (geometry :x "0%"
                       :y "0%"

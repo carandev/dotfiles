@@ -6,10 +6,10 @@ $current-desktop-color: #ff79c6;
 }
 
 .bar {
-  padding: .5rem 1rem;
+  padding: .5rem;
 }
 
-.workspaces {
+.sct {
   background: $color-background;
   padding: .5rem 1rem;
   border-radius: 10px;
@@ -35,8 +35,6 @@ $current-desktop-color: #ff79c6;
   color: $current-desktop-color;
 }
 
-.sidestaff {
-  background: $color-background;
-  padding: .5rem 1rem;
-  border-radius: 10px;
+.sidestaff button:hover {
+  color: #f44;
 }
