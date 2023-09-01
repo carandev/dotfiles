@@ -22,8 +22,9 @@
 (defwidget music []
   (box :class "sct"
     :orientation "h"
-    :space-evenly true
     :halign "center"
+    :space-evenly false
+    :spacing 10
 
     (label
       :text current-song
