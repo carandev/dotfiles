@@ -1,18 +1,21 @@
 #! /bin/sh
 
-pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x sxhkd >/dev/null || sxhkd &
 
 bspc monitor -d I II III IV V
 
-bspc config border_width         2
-bspc config window_gap          12
+bspc config border_width 2
+bspc config window_gap 12
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config split_ratio 0.52
+bspc config borderless_monocle true
+bspc config gapless_monocle true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a firefox desktop='^2'
 bspc rule -a wezterm desktop='^1'
 bspc rule -a obs desktop='^3'
 bspc rule -a discord desktop='^4'
+bspc rule -a spotify-launcher desktop='^4'
+
+wmname LG3D
