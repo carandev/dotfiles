@@ -74,7 +74,7 @@ $shell\
 [time]
 disabled = false
 time_format = "%T"
-format = "ﲊ [$time ](bold blue)"
+format = " [$time ](bold blue)"
 
 [sudo]
 disabled = false
