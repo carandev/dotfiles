@@ -2,21 +2,21 @@
     "com.github.ulauncher.ulauncher-emoji": {
         "id": "com.github.ulauncher.ulauncher-emoji",
         "url": "https://github.com/Ulauncher/ulauncher-emoji",
-        "updated_at": "2023-08-18T00:06:25.591189",
-        "last_commit": "4c6af50d1c9a24d5aad2c597634ff0c634972a5c",
-        "last_commit_time": "2021-08-08T19:19:59"
+        "updated_at": "2025-04-07T23:58:33.353885",
+        "last_commit": "827cfe5e1d2f89f742f811f981759787b0654fa9",
+        "last_commit_time": "2023-11-04T18:37:13"
     },
     "com.github.lighttigerxiv.ulauncher-session-manager": {
         "id": "com.github.lighttigerxiv.ulauncher-session-manager",
         "url": "https://github.com/lighttigerXIV/ulauncher-session-manager",
-        "updated_at": "2023-08-18T00:06:27.239634",
+        "updated_at": "2025-04-07T23:58:34.839081",
         "last_commit": "39218fddb79d86150c4624d96b1a162eba89c993",
         "last_commit_time": "2023-05-23T08:14:57"
     },
     "com.github.brpaz.ulauncher-awesomelists": {
         "id": "com.github.brpaz.ulauncher-awesomelists",
         "url": "https://github.com/brpaz/ulauncher-awesomelists",
-        "updated_at": "2023-08-18T00:06:29.252236",
+        "updated_at": "2025-04-07T23:58:37.804756",
         "last_commit": "a48a0b11cef4c2fb5375b11834ce0378be2d15d3",
         "last_commit_time": "2021-12-12T15:44:13"
     },
@@ -30,85 +30,85 @@
     "com.github.rkarami.ulauncher-gitmoji": {
         "id": "com.github.rkarami.ulauncher-gitmoji",
         "url": "https://github.com/rkarami/ulauncher-gitmoji",
-        "updated_at": "2023-08-18T00:06:34.873969",
+        "updated_at": "2025-04-07T23:58:40.764368",
         "last_commit": "59ad2d0aa89696d41a29ce0efc845f2138f47b6e",
         "last_commit_time": "2019-09-26T13:21:43"
     },
     "com.github.brpaz.ulauncher-docsearch": {
         "id": "com.github.brpaz.ulauncher-docsearch",
         "url": "https://github.com/brpaz/ulauncher-docsearch",
-        "updated_at": "2023-08-18T00:06:38.718200",
+        "updated_at": "2025-04-07T23:58:44.286492",
         "last_commit": "8aa13c2412bcd3fdd68787b19e2b1f88d6676e3f",
         "last_commit_time": "2022-06-18T11:16:39"
     },
     "com.github.nastuzzisamy.ulauncher-custom-scripts": {
         "id": "com.github.nastuzzisamy.ulauncher-custom-scripts",
         "url": "https://github.com/NastuzziSamy/ulauncher-custom-scripts",
-        "updated_at": "2023-08-18T00:06:40.572318",
+        "updated_at": "2025-04-07T23:58:46.515481",
         "last_commit": "7a68cbafb4acc01fed340d0d2ae99a6701724b31",
         "last_commit_time": "2022-11-21T21:19:31"
     },
     "com.github.fsevenm.ulauncher-verb-forms-checker": {
         "id": "com.github.fsevenm.ulauncher-verb-forms-checker",
         "url": "https://github.com/fsevenm/ulauncher-verb-forms-checker",
-        "updated_at": "2023-08-18T00:06:42.331732",
+        "updated_at": "2025-04-07T23:58:48.630454",
         "last_commit": "336f894a306aef80c5873a56b5b9331bbc401712",
         "last_commit_time": "2021-01-15T19:07:59"
     },
     "com.github.randomcharacter.ulauncher-meet": {
         "id": "com.github.randomcharacter.ulauncher-meet",
         "url": "https://github.com/randomCharacter/ulauncher-meet",
-        "updated_at": "2023-08-18T00:06:43.803602",
+        "updated_at": "2025-04-07T23:58:49.933425",
         "last_commit": "f2fe055b6e21e15ea4c65918a6f499d61d4cf4b0",
         "last_commit_time": "2021-02-26T22:04:21"
     },
     "com.github.eckhoff42.ulauncher-bluetooth-quick-connect": {
         "id": "com.github.eckhoff42.ulauncher-bluetooth-quick-connect",
         "url": "https://github.com/Eckhoff42/Ulauncher-Bluetooth-quick-connect",
-        "updated_at": "2023-08-18T00:06:45.458317",
+        "updated_at": "2025-04-07T23:58:51.605786",
         "last_commit": "2cb1d85cdfa870888e3eeda733b63467b0966ad1",
         "last_commit_time": "2022-05-10T15:18:43"
     },
     "com.github.karlfrederik.ulauncher-speedtest": {
         "id": "com.github.karlfrederik.ulauncher-speedtest",
         "url": "https://github.com/KarlFrederik/ulauncher-speedtest",
-        "updated_at": "2023-08-18T00:06:47.171712",
+        "updated_at": "2025-04-07T23:58:52.939030",
         "last_commit": "e7be42fdacc6a1741c98cef9638c82cbf92f40c6",
         "last_commit_time": "2022-03-16T23:39:16"
     },
     "com.github.leogouveia.ulauncher-npmjs": {
         "id": "com.github.leogouveia.ulauncher-npmjs",
         "url": "https://github.com/leogouveia/ulauncher-npmjs",
-        "updated_at": "2023-08-18T00:06:48.877594",
+        "updated_at": "2025-04-07T23:58:54.439885",
         "last_commit": "d0cac29b68c9fbf3d85095f466a4a3801dc48cfb",
         "last_commit_time": "2021-12-31T11:40:55"
     },
     "com.github.zakuciael.ulauncher-jetbrains-reloaded": {
         "id": "com.github.zakuciael.ulauncher-jetbrains-reloaded",
         "url": "https://github.com/zakuciael/ulauncher-jetbrains-reloaded",
-        "updated_at": "2023-08-18T00:06:51.985431",
-        "last_commit": "f6ee473c216881568ecaa3c31c326094ad1d7ba7",
-        "last_commit_time": "2022-07-09T16:17:10"
+        "updated_at": "2025-04-07T23:58:56.923025",
+        "last_commit": "9f60e2dc6f51cbe3161031d33e6ab8f85dce2d82",
+        "last_commit_time": "2024-04-11T05:40:03"
     },
     "com.github.tchar.ulauncher-albert-calculate-anything": {
         "id": "com.github.tchar.ulauncher-albert-calculate-anything",
         "url": "https://github.com/tchar/ulauncher-albert-calculate-anything",
-        "updated_at": "2023-08-18T00:06:56.777679",
-        "last_commit": "ee0903174c8b87cd1f7c3b6c1acef10702547507",
-        "last_commit_time": "2021-08-12T06:39:56"
+        "updated_at": "2025-04-07T23:59:07.899699",
+        "last_commit": "037965a44e6f6f496e7ad71ec1651b9edfcde32d",
+        "last_commit_time": "2024-05-29T21:57:26"
     },
     "com.github.ulauncher.ulauncher-timer": {
         "id": "com.github.ulauncher.ulauncher-timer",
         "url": "https://github.com/ulauncher/ulauncher-timer",
-        "updated_at": "2023-08-18T00:06:58.375573",
+        "updated_at": "2025-04-07T23:59:09.363488",
         "last_commit": "2d3fe82fe1e38670e6eb8887cd2a4b4d1c2baa79",
         "last_commit_time": "2023-03-25T08:07:41"
     },
     "com.github.brpaz.ulauncher-vscode-projects": {
         "id": "com.github.brpaz.ulauncher-vscode-projects",
         "url": "https://github.com/brpaz/ulauncher-vscode-projects",
-        "updated_at": "2023-08-18T00:07:00.786918",
-        "last_commit": "6ba448b240af19568a3750dc5b7e550cdb1e954d",
-        "last_commit_time": "2022-06-15T14:19:48"
+        "updated_at": "2025-04-07T23:59:16.500881",
+        "last_commit": "e8d17a2d96d75a0be26773f8f4855afd0045c94f",
+        "last_commit_time": "2025-02-15T15:47:41"
     }
 }
