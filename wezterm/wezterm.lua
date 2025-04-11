@@ -13,7 +13,7 @@ return {
     bottom = 0
   },
   font_size = 11,
-  font = wezterm.font 'CaskaydiaCove Nerd Font',
+  font = wezterm.font 'JetBrainsMono NFM',
   -- window_background_image = '/home/carandev/wallpapers/wallhaven-9mjoy1.png',
 
   -- window_background_image_hsb = {
