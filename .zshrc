@@ -114,10 +114,10 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="lvim ~/.zshrc"
-alias ohmyzsh="lvim ~/.oh-my-zsh"
-alias termconfig="lvim ~/.config/wezterm/wezterm.lua"
-alias termkeyconfig="lvim ~/.config/sxhkd/sxhkdrc"
+alias zshconfig="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias termconfig="nvim ~/.config/wezterm/wezterm.lua"
+alias termkeyconfig="nvim ~/.config/sxhkd/sxhkdrc"
 alias ls='exa'
 alias l='exa -al --icons --header'
 alias tree='exa -Tal --icons --header --git-ignore --icons'
@@ -135,8 +135,8 @@ eval "$(zoxide init zsh)"
 
 export PATH="$PATH:/home/carandev/.bin"
 
-export PATH="$PATH:/home/carandev/.bin"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/home/carandev/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/home/carandev/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
