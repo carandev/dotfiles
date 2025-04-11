@@ -1,0 +1,10 @@
+[include]
+  # Valor por default para git; de esta manera, por defecto siempre usaremos nuestra cuenta personal
+  path = ~/.gitconfig.personal
+
+[includeIf "gitdir:~/schein/"]
+  # Todos los proyectos que descarguemos o creemos a partir de esta ruta, usara tu cuenta de tu trabajo
+  path = ~/.gitconfig.work
+
+[init]
+  defaultBranch = main

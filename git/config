@@ -1,0 +1,18 @@
+Host github.com
+  User          carandev
+  HostName      github.com
+  # La ruta a tu llave privada asociada a tu cuenta personal
+  IdentityFile  ~/.ssh/id_rsa_personal
+
+  # Este host tiene que ser el mismo que pusimos en el paso tres
+Host work.github.com
+  User          CarlosGomezSchein
+  HostName      github.com
+  # La ruta a tu llave privada asociada a tu cuenta de trabajo
+  IdentityFile  ~/.ssh/id_rsa_work
+
+Host *
+  AddKeysToAgent            yes
+  IdentitiesOnly            yes
+  Compression               yes
+  PreferredAuthentications  publickey
