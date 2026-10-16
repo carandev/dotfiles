@@ -1,0 +1,27 @@
+# Herdr config template. Installed by install.sh / install.ps1, which replace
+# @SCRIPTS_DIR@ with the absolute path of the installed scripts directory.
+onboarding = false
+
+[ui.toast]
+delivery = "system"
+
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+[ui]
+status_indicators = "symbols"
+sidebar_width = 50
+
+[[keys.command]]
+key = "prefix+alt+w"
+type = "plugin_action"
+command = "repo-worktrees.new-worktree"
+
+[[keys.command]]
+key = "prefix+alt+s"
+type = "popup"
+command = 'node "@SCRIPTS_DIR@/open-user-secrets.mjs"'
+description = "open .NET user-secrets in nvim"
+width = "90%"
+height = "90%"
