@@ -1,0 +1,14 @@
+{
+  "chat.tools.autoApprove": true,
+  "console-ninja.featureSet": "Community",
+  "database-client.autoSync": true,
+  "redhat.telemetry.enabled": false,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.env.windows": {},
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "symbols",
+  "workbench.sideBar.location": "right"
+}
